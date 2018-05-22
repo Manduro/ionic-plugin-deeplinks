@@ -170,7 +170,7 @@ public class IonicDeeplink extends CordovaPlugin {
       if (o instanceof Collection) {
         return new JSONArray((Collection) o);
       } else if (o.getClass().isArray()) {
-        return new JSONArray(o);
+        return null;
       }
       if (o instanceof Map) {
         return new JSONObject((Map) o);
